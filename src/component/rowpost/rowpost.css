@@ -1,0 +1,88 @@
+.row{
+    margin: left 20px;  
+    color: #fff;
+}
+.posters{
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+.poster{
+    cursor:pointer;
+    max-height: 250px;
+    margin-right: 10px;
+}
+.smallposter{
+    cursor: pointer;
+    max-height: 150px;
+    margin-right: 10px;
+}  
+.poster:hover{
+    transform: scale(1.13);
+
+}
+.content{
+    padding-top: 140px;
+    height: 190px;
+    padding-left: 15px;}
+ .overview{
+        font-size: 3rem ;
+        font-weight:800;
+        padding-bottom:0.3rem;}
+.smallposter:hover{
+    transform: scale(1.13);
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+.posterDiscription {
+    position: absolute;
+    z-index: 1;
+    top: -3px;
+    background:rgb(3, 3, 3);
+    bottom: 30;
+    left: -17px;
+    right: 14px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 22px;
+    line-height: 18px;
+
+}
+.posterList {
+    position: relative;
+    z-index: 1;
+}
+.posterList:hover .posterDiscription {
+    opacity: 1;
+}
+.posterList:hover {
+    z-index: 2;
+}
+.posterName {
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    background: rgba(0,0,0,0.5);
+    bottom: 250px;
+    left: -24px;
+    right: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 12px;
+    color: rgb(250, 252, 249);
+    font-weight: 900;
+    line-height: 12px;
+}
+.posterList:hover .posterName {
+    opacity: 12;
+}
